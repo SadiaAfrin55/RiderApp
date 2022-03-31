@@ -8,12 +8,9 @@ part 'Login.g.dart';
 
 @JsonSerializable()
 class Login{
-
-
   String? status;
   String? token;
   User? user;
-
 
   Login(this.status, this.token, this.user);
 

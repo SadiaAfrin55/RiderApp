@@ -38,7 +38,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           fontFamily: 'Nunito',
           primarySwatch: Colors.blue,
-          scaffoldBackgroundColor: const Color(0xFF000000),
           dividerColor: const Color(0xFFEEEEEE),
         ),
         onGenerateRoute: router.generateRoute,

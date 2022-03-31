@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive/hive.dart';
 import 'package:progress_state_button/progress_button.dart';
 import 'package:easy_localization/easy_localization.dart';
-
+import '../../Screens/splash_screen.dart';
 import '../../../Bloc/Login/login_cubit.dart';
 import '../../../Constants/Strings/app_string.dart';
 import '../../../Service/LoginService/save_user_data_local.dart';
@@ -65,8 +65,7 @@ class _LoginPageState extends State<LoginPage> {
             );
           }else{
             loginDataSave?.storeTokenUserdata(users,data.token, data.user!.id, data.user!.name, data.user!.email, data.user!.role,data.user!.employeeId);
-            //Navigator.pushReplacement(context, PageTransition(HomePage()));
-            Navigator.pushNamed(context, HOME_PAGE);
+            Navigator.pushReplacement(context, PageTransition(HomePage()));
           }
 
         }

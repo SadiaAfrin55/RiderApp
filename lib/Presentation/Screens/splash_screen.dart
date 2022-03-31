@@ -8,6 +8,7 @@ import '../../../main.dart';
 import '../../../Service/LocalDataBase/localdata.dart';
 import '../../Constants/Strings/app_string.dart';
 import '../Pages/Login/login_page.dart';
+import '../Pages/Home/home_page.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
